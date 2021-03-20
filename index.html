@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <meta name="description" content="Race00. Calculator">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/calculator.js"></script>
+</head>
+
+<body>
+
+    <div class="calculator">
+        <div class="calculator__form">
+            <div class="dropdown">
+                <button class="dropbtn">Feature
+                    <div class="dropdown_content">
+                        <input type="button" class="basic" value="Basic"></p>
+                        <input type="button" class="covert_veight" value="Convertor"></p>
+                    </div>
+                </button>
+                <h1>Calculator</h1>
+            </div>
+            <div id="basic">
+                <div class="calculator__row output">
+                    <p id="history"></p>
+                    <input class="calculator__display" id="display" type="text" autocomplete="off" />
+                    <p class="line"></p>
+                </div>
+                <div class="calculator__row">
+                    <input type="button" value="с" class="calculator__key calculator__clear calculator__oper">
+                    <input type="button" value="ce" class="calculator__key calculator__backspace calculator__oper">
+                    <input type="button" value="+/-" class="calculator__key calculator__change calculator__oper">
+                    <input type="button" value="+" class="calculator__key calculator__button calculator__key_actions">
+                </div>
+                <div class="calculator__row">
+                    <input type="button" value="9" class="calculator__key calculator__button">
+                    <input type="button" value="8" class="calculator__key calculator__button">
+                    <input type="button" value="7" class="calculator__key calculator__button">
+                    <input type="button" value="-" class="calculator__key calculator__button calculator__key_actions">
+                </div>
+                <div class="calculator__row">
+                    <input type="button" value="6" class="calculator__key calculator__button">
+                    <input type="button" value="5" class="calculator__key calculator__button">
+                    <input type="button" value="4" class="calculator__key calculator__button">
+                    <input type="button" value="*" class="calculator__key calculator__button calculator__key_actions">
+                </div>
+                <div class="calculator__row">
+                    <input type="button" value="3" class="calculator__key calculator__button">
+                    <input type="button" value="2" class="calculator__key calculator__button">
+                    <input type="button" value="1" class="calculator__key calculator__button">
+                    <input type="button" value="/" class="calculator__key calculator__button calculator__key_actions">
+                </div>
+                <div class="calculator__row">
+                    <input type="button" value="0" class="calculator__key calculator__button">
+                    <input type="button" value="." class="calculator__key calculator__decimal calculator__button">
+                    <input type="button" value="=" class="calculator__key calculator__key--equal">
+                </div>
+                <div class="calculator__row" id="advance__row">
+                    <input class="calculator__key advance__button" type="button" value="&#8744;">
+                </div>
+                <div class="calculator__advance">
+                    <div class="calculator__row">
+                        <input type="button" value="%"
+                            class="calculator__key calculator__button calculator__key_actions">
+                        <input type="button" value="x!" class="calculator__key calculator__factorial calculator__oper">
+                        <input type="button" value="^"
+                            class="calculator__key calculator__button calculator__key_actions">
+                        <input type="button" value="√" class="calculator__key calculator__sqrt calculator__oper">
+                    </div>
+                    <div class="calculator__row">
+                        <input type="button" value="("
+                            class="calculator__key calculator__button calculator__key_actions">
+                        <input type="button" value=")"
+                            class="calculator__key calculator__button calculator__key_actions">
+                        <input type="button" value="MS" class="calculator__key calculator__MS calculator__oper">
+                        <input type="button" value="MC" class="calculator__key calculator__MC calculator__oper">
+                    </div>
+                    <div class="calculator__row">
+                        <input type="button" value="MR" class="calculator__key calculator__MR calculator__oper">
+                    </div>
+                </div>
+            </div>
+            <div class="convertor">
+                <div class="convertor_input">
+                    <input class="calculator__display_grams" type="text" autocomplete="cc-number"
+                        placeholder="Grams" />
+                    <p class="line"></p>
+                    <input class="calculator__display_kilograms" type="text" autocomplete="cc-number"
+                        placeholder="Kilograms" />
+                    <p class="line"></p>
+                    <input class="calculator__display_tons" type="text" autocomplete="cc-number"
+                        placeholder="Tons" />
+                    <p class="line"></p>
+                    <p class="convertor_text">Grams</p>
+                    <input class="calculator__output_grams" type="text" autocomplete="cc-number" />
+                    <p class="line"></p>
+                    <p class="convertor_text">Kilograms</p>
+                    <input class="calculator__output_kilograms" type="text" autocomplete="cc-number" />
+                    <p class="line"></p>
+                    <p class="convertor_text">Tons</p>
+                    <input class="calculator__output_tons" type="text" autocomplete="cc-number" />
+                    <p class="line"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
